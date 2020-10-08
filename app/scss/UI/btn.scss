@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+  border: 0;
+  outline: 0;
+  background-color: #ff272b;
+  box-shadow: inset rem(0px) rem(-4px) rem(0px) rgba(0, 0, 0, 0.25);
+  border-radius: rem(50px);
+  width: 100%;
+  padding-top: rem(16px);
+  padding-bottom: rem(22px);
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  font-weight: bold;
+  font-size: rem(18px);
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: darken(#ff272b, 15%);
+    box-shadow: none;
+  }
+
+  &:active {
+    transition: 0s;
+    box-shadow: none;
+    background-color: darken(#ff272b, 25%);
+  }
+}

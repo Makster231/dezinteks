@@ -1,0 +1,25 @@
+﻿.header {
+  padding-top: rem(9px);
+  margin-bottom: rem(23px);
+  &_logo {
+    width: rem(200px);
+    display: block;
+    margin-right: auto;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -95px;
+      top: -9px;
+      width: 406px;
+      height: 127px;
+      background: url("../../images/css_sprites.png") -10px -10px;
+    }
+
+    img {
+      position: relative;
+      z-index: 5;
+    }
+  }
+}

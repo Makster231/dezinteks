@@ -1,0 +1,181 @@
+.entry {
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &_main {
+    width: rem(644px);
+    position: relative;
+
+    h1 {
+      font-weight: 900;
+      font-size: rem(56px);
+      line-height: rem(68px);
+      text-transform: uppercase;
+      color: #118976;
+      text-shadow: rem(2px) rem(2px) rem(0px) #ffffff;
+      margin-bottom: rem(64px);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        position: relative;
+        font-weight: bold;
+        font-size: rem(20px);
+        line-height: rem(28px);
+        color: #333333;
+        margin-bottom: rem(50px);
+        display: block;
+        width: rem(277px);
+        padding-left: rem(75px);
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: rem(56px);
+          height: rem(56px);
+          background: url('../../images/css_sprites.png') -10px -157px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: rem(176px);
+      height: rem(388px);
+    }
+  }
+
+  &_aside {
+    width: rem(368px);
+    padding: rem(24px) rem(57px);
+    background-color: #fff;
+    box-shadow: rem(0px) rem(4px) rem(4px) rgba(0, 0, 0, 0.25);
+    border-radius: rem(2px);
+    box-sizing: border-box;
+
+    &-content {
+      margin-bottom: rem(88px);
+      h2 {
+        font-weight: bold;
+        font-size: rem(28px);
+        line-height: rem(32px);
+        letter-spacing: -0.01em;
+        color: #333333;
+        margin-bottom: rem(12px);
+        text-align: center;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: rem(22px);
+        line-height: rem(23px);
+        margin-bottom: rem(4px);
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #ff2c2c;
+
+        &.hot_price {
+          font-weight: 800;
+          margin-bottom: 0;
+          font-size: rem(38px);
+          line-height: rem(51px);
+        }
+      }
+    }
+
+    &-form {
+      .form-control {
+        display: block;
+        margin-bottom: rem(12px);
+        position: relative;
+
+        &:first-of-type {
+          &:after {
+            content: "";
+            padding: rem(4px);
+            position: absolute;
+            right: rem(17px);
+            top: rem(18px);
+            z-index: 1;
+            text-align: center;
+            width: rem(14px);
+            height: rem(8px);
+            pointer-events: none;
+            box-sizing: border-box;
+            // background: url(../../images/svg/arrow_down.svg) center no-repeat;
+            transition: 0.3s ease;
+
+            background: url('../../images/css_sprites.png') -86px -157px;
+          }
+
+          &:focus-within:after {
+            transform: rotate(180deg);
+          }
+        }
+        &:last-of-type {
+          margin-bottom: rem(21px);
+        }
+      }
+
+      label {
+        display: none;
+      }
+
+      select {
+        cursor: pointer;
+        appearance: none;
+        &::-ms-expand {
+          display: none;
+        }
+      }
+
+      input,
+      select {
+        display: block;
+        width: 100%;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #333333;
+        padding: rem(12px) rem(19px);
+        border: rem(1px) solid #089c84;
+        box-sizing: border-box;
+        border-radius: rem(2px);
+        transition: 0.3s ease;
+        font-family: "Inter", sans-serif !important;
+
+        &::placeholder {
+          font-size: rem(14px);
+          line-height: rem(16px);
+        }
+        &:focus {
+          box-shadow: inset rem(0px) rem(0px) rem(4px) rem(1px) #089c84;
+        }
+      }
+
+      .btn {
+        margin-bottom: rem(16px);
+      }
+      p {
+        font-size: rem(12px);
+        line-height: rem(20px);
+        color: #828282;
+        text-align: center;
+      }
+    }
+  }
+}
