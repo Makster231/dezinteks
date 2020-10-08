@@ -1,17 +1,23 @@
-.sprite-arrow_down {
+.sprites-arrow_down {
   width: 14px;
   height: 8px;
-  background: url("../../images/css_sprites.png") -86px -157px;
+  background: url("../../images/css_sprites.png") -86px -323px;
 }
 
-.sprite-check {
+.sprites-check {
   width: 56px;
   height: 56px;
-  background: url("../../images/css_sprites.png") -10px -157px;
+  background: url("../../images/css_sprites.png") -10px -323px;
 }
 
-.sprite-logo_bg {
+.sprites-logo_bg {
   width: 406px;
   height: 127px;
+  background: url("../../images/css_sprites.png") -10px -176px;
+}
+
+.sprites-logo_bg_mob {
+  width: 406px;
+  height: 146px;
   background: url("../../images/css_sprites.png") -10px -10px;
 }

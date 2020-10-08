@@ -1,25 +1,44 @@
 ﻿.header {
-  padding-top: rem(9px);
-  margin-bottom: rem(23px);
+  padding-top: rem(24px);
+  margin-bottom: rem(16px);
+
+  @media (min-width: $md) {
+    padding-top: rem(9px);
+    margin-bottom: rem(23px);
+  }
   &_logo {
     width: rem(200px);
     display: block;
+    margin-left: auto;
     margin-right: auto;
     position: relative;
 
     &:before {
       content: "";
+      transform: scaleX(0.75);
       position: absolute;
-      left: -95px;
-      top: -9px;
-      width: 406px;
-      height: 127px;
-      background: url("../../images/css_sprites.png") -10px -10px;
+      left: rem(-103px);
+      width: rem(406px);
+      top: rem(-25px);
+      height: rem(146px);
+      background: url(../../images/css_sprites.png) -10px -10px;
     }
 
     img {
       position: relative;
       z-index: 5;
+    }
+
+    @media (min-width: $md) {
+      &:before {
+        top: rem(-9px);
+        height: rem(127px);
+        background: url("../../images/css_sprites.png") -10px -176px;
+      }
+    }
+
+    @media (min-width: $lg) {
+      margin-left: 0;
     }
   }
 }
