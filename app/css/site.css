@@ -204,13 +204,13 @@ body { font-family: "Inter", sans-serif !important; overflow-x: hidden; backgrou
 
 @media (min-width: 640px) { .entry_main img { position: absolute; bottom: 0; right: 0; } }
 
-.entry_aside { background-color: #fff; box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); border-radius: 0.125rem; box-sizing: border-box; width: 100%; padding: 1.5rem 2.0625rem; margin-bottom: 4.5rem; }
+.entry_aside { background-color: #fff; box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); border-radius: 0.125rem; box-sizing: border-box; width: 100%; max-width: 20rem; padding: 1.5rem 2.0625rem; margin-bottom: 4.5rem; margin-left: auto; margin-right: auto; }
 
-@media (min-width: 640px) { .entry_aside { width: 25rem; margin-left: auto; margin-right: auto; padding-left: 3.5625rem; padding-right: 3.5625rem; } }
+@media (min-width: 640px) { .entry_aside { max-width: 25rem; padding-left: 3.5625rem; padding-right: 3.5625rem; } }
 
-@media (min-width: 960px) { .entry_aside { width: 20rem; margin: 0; } }
+@media (min-width: 960px) { .entry_aside { max-width: 20rem; margin: 0; } }
 
-@media (min-width: 1168px) { .entry_aside { width: 23rem; margin-bottom: 0; } }
+@media (min-width: 1168px) { .entry_aside { max-width: 23rem; margin-bottom: 0; } }
 
 .entry_aside-content { margin-bottom: 3.3125rem; }
 
