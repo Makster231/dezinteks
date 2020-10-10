@@ -126,21 +126,21 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-app
 
 a { text-decoration: none; }
 
-.container { position: relative; width: 100%; margin-left: auto; margin-right: auto; max-width: calc(100% - 30px); }
+html { font-size: 100%; }
 
-@media (min-width: 640px) { .container { max-width: 640px; } }
+.container { position: relative; width: 100%; max-width: calc(100% - 30px); margin-left: auto; margin-right: auto; }
 
-@media (min-width: 960px) { .container { max-width: 960px; } }
+@media (min-width: 640px) { .container { max-width: 40rem; } }
 
-@media (min-width: 1168px) { .container { max-width: 1140px; } }
+@media (min-width: 960px) { .container { max-width: 60rem; } }
+
+@media (min-width: 1168px) { .container { max-width: 71.25rem; } }
 
 @media (max-width: 640px) { .hidden_when-md { display: none; } }
 
 .visible_when-md { display: none; }
 
-@media (max-width: 640px) { .visible_when-md { display: block; } }
-
-html { font-size: 100%; }
+@media (max-width: 640px) { .visible_when-md { display: inline-block; } }
 
 /* purgecss start ignore */
 .wrapper-page { display: flex; flex-direction: column; min-height: 100vh; }
